@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{%endblock%}
-{% block heading %}{{ page.title }}{%endblock%}
+{% block title %}{{ FREENET }}{%endblock%}
+{% block heading %}{{ FREENET FEATURES }}{%endblock%}
 {% block content %}
     {% import 'translations.html' as translations with context %}
+    <div w3-include-html="translations.html"></div>
     {{ translations.translations_for(page) }}
 
     {{ page.content }}
